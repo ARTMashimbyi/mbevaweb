@@ -16,11 +16,9 @@ export default function Contact() {
             <div className="flex items-center">
               <Mail className="w-5 h-5 text-blue-600 mr-3" />
               <span>mbeveconstructionptyltdluckyma@gmail.com</span>
-              
             </div>
             <div className="flex items-center">
               <Mail className="w-5 h-5 text-blue-600 mr-3" />
-            
               <span>luckymash580@gmail.com</span>
             </div>
             <div className="flex items-center">
@@ -35,15 +33,18 @@ export default function Contact() {
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-semibold mb-6">Request a Quote</h3>
-          <form className="space-y-4"  action="https://formsubmit.co/firjjust@gmail.com" method="POST" >
+          <form className="space-y-4" action="https://formsubmit.co/firjjust@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New quote request!" />
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Name
               </label>
               <input
                 type="text"
+                name="name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div>
@@ -52,8 +53,10 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                name="email"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
                 placeholder="your@email.com"
+                required
               />
             </div>
             <div>
@@ -61,9 +64,11 @@ export default function Contact() {
                 Message
               </label>
               <textarea
+                name="message"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md"
                 rows="4"
                 placeholder="Tell us about your project"
+                required
               ></textarea>
             </div>
             <button
