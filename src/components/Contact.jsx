@@ -35,7 +35,7 @@ export default function Contact() {
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-semibold mb-6">Request a Quote</h3>
-          <form className="space-y-4">
+          <form className="space-y-4"  action="https://formsubmit.co/firjjust@gmail.com" method="POST" >
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Name
