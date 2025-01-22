@@ -4,9 +4,9 @@ import Hero from './components/Hero.jsx';
 import Services from './components/Services.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
+import Profile from './components/Profile.jsx';
 import Footer from './components/Footer.jsx';
 import './index.css';
-
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,10 +23,10 @@ export default function App() {
       <Hero setActiveTab={setActiveTab} />
       
       <main className="max-w-7xl mx-auto px-4 py-12">
-        
         {activeTab === 'projects' && <Projects />}
         {activeTab === 'services' && <Services />}
         {activeTab === 'contact' && <Contact />}
+        {activeTab === 'profile' && <Profile />}
       </main>
 
       <Footer setActiveTab={setActiveTab} />
