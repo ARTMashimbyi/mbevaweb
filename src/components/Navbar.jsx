@@ -1,7 +1,6 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, User } from 'lucide-react';
 import logo from "./logo3.png";
-
 
 export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuOpen }) {
   return (
@@ -17,18 +16,7 @@ export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuO
             <h1 className="text-2xl font-bold text-gray-800">Mbeva Construction</h1>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gray-900"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-
-          {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => setActiveTab('services')}
               className={`px-3 py-2 rounded-md text-sm font-medium ${
@@ -53,11 +41,27 @@ export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuO
             >
               Contact
             </button>
+            <button
+              onClick={() => setActiveTab('profile')}
+              className={`p-2 rounded-full ${
+                activeTab === 'profile' ? 'bg-blue-100 text-blue-600' : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              <User size={20} />
+            </button>
+          </div>
+
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-700 hover:text-gray-900"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
@@ -87,6 +91,15 @@ export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuO
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 w-full text-left"
             >
               Contact
+            </button>
+            <button
+              onClick={() => {
+                setActiveTab('profile');
+                setIsMenuOpen(false);
+              }}
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 w-full text-left"
+            >
+              Company Profile
             </button>
           </div>
         </div>
