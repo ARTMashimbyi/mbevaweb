@@ -8,6 +8,110 @@ export default function Services() {
   const services = [
     {
       id: 1,
+      title: 'Residential Construction',
+      description: 'Custom homes, renovations, and home additions tailored to your needs.',
+      fullDescription: `Our residential construction services cover everything from ground-up custom homes to complex renovations. Our expertise includes:
+      - Custom home design and construction
+      - Home additions and extensions
+      - Major renovations and remodeling
+      - Luxury home features and amenities
+      - Energy-efficient building practices
+      - Smart home technology integration
+
+      We work closely with homeowners to bring their vision to life while ensuring the highest quality standards.`,
+      images: [
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600'
+      ],
+      thumbnails: [
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Commercial Construction',
+      description: 'Office buildings, retail spaces, and industrial facilities.',
+      fullDescription: `We specialize in commercial construction projects of all sizes. Our services include:
+      - Office building construction
+      - Retail space development
+      - Industrial facility construction
+      - Warehouse and logistics centers
+      - Medical facilities and laboratories
+      - Restaurant and hospitality spaces
+
+      Our team ensures efficient project management and timely delivery while maintaining the highest safety standards.`,
+      images: [
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600'
+      ],
+      thumbnails: [
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Infrastructure Development',
+      description: 'Roads, bridges, and public works projects.',
+      fullDescription: `Our infrastructure development services support public and private sector needs. We handle:
+      - Road construction and maintenance
+      - Bridge building and rehabilitation
+      - Underground utility systems
+      - Public transportation infrastructure
+      - Storm water management systems
+      - Environmental conservation projects
+
+      Each project is executed with careful attention to safety, durability, and environmental impact.`,
+      images: [
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600'
+      ],
+      thumbnails: [
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Interior Finishing',
+      description: 'High-quality interior work including flooring, painting, and custom carpentry.',
+      fullDescription: `Our interior finishing services bring spaces to life with attention to detail and premium craftsmanship. Services include:
+      - Custom cabinetry and millwork
+      - Hardwood and specialty flooring
+      - Professional painting and wall finishes
+      - Custom built-ins and shelving
+      - Ceiling treatments and lighting
+      - High-end material installation
+
+      We work with both residential and commercial clients to create stunning interior spaces.`,
+      images: [
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600',
+        '/api/placeholder/800/600'
+      ],
+      thumbnails: [
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150',
+        '/api/placeholder/200/150'
+      ]
+    },
+    {
+      id: 5,
       title: 'General & Commercial Building Construction',
       description: 'Office, home, and commercial renovations/building production.',
       fullDescription: `We provide turnkey production services from the conceptual drawing stage to project closing. We partner with clients to allow them to continue with their core business while we take care of their production needs.`,
@@ -15,7 +119,7 @@ export default function Services() {
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     },
     {
-      id: 2,
+      id: 6,
       title: 'Renovation Services',
       description: 'Comprehensive renovation solutions for new and existing infrastructure.',
       fullDescription: `Our Renovation division provides comprehensive solutions to new and existing infrastructure. We offer upgrades on package selections and deliver cost-effective solutions tailored to each client's unique needs.`,
@@ -23,7 +127,7 @@ export default function Services() {
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     },
     {
-      id: 3,
+      id: 7,
       title: 'Specialized Services',
       description: 'Plumbing, electrical, carpentry, and more.',
       fullDescription: `We offer specialized services including:
@@ -38,7 +142,7 @@ export default function Services() {
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     },
     {
-      id: 4,
+      id: 8,
       title: 'Infrastructure Development',
       description: 'Complete infrastructure solutions and development services.',
       fullDescription: `Our infrastructure development services include comprehensive planning, design, and implementation of various infrastructure projects. We focus on delivering quality results while maintaining cost-effectiveness.`,
