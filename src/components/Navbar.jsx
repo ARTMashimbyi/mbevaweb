@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from "./logo.png";
+import logo from "./logo3.png";
 
 
 export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuOpen }) {
@@ -12,7 +12,7 @@ export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuO
             <img 
               src={logo}
               alt="Mbeva Construction Logo" 
-              className="h-25 w-20 rounded"
+              className="h-16 w-16 rounded"
             />
             <h1 className="text-2xl font-bold text-gray-800">Mbeva Construction</h1>
           </div>
