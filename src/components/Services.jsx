@@ -1,9 +1,135 @@
 import React, { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { 
+  X, ChevronLeft, ChevronRight, ChevronDown, ChevronUp,
+  Wrench, PaintBucket, 
+  Axe, Wind, Cpu, Zap, Globe, Building, 
+  Home, ArrowDownToLine, 
+  SunDim, Cable, CodeXml, Lightbulb, 
+  Activity, HardHat
+} from 'lucide-react';
 
 export default function Services() {
   const [selectedService, setSelectedService] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showAdditionalServices, setShowAdditionalServices] = useState(false);
+
+  const additionalServices = [
+    {
+      name: 'Plumbing Reticulation',
+      icon: Activity,
+      description: 'Expert installation of reticulation and irrigation systems, handling every step of the process.'
+    },
+    {
+      name: 'Ceilings (Suspended and Plastered)',
+      icon: Building,
+      description: 'Flexible and modern ceiling solutions for residential and commercial spaces.'
+    },
+    {
+      name: 'Roof and Roof Structures',
+      icon: Building,
+      description: 'Comprehensive roofing and waterproofing repairs for domestic, commercial, and industrial properties.'
+    },
+    {
+      name: 'Gutter and Storm Water Drainage',
+      icon: Activity,
+      description: 'Specialized drainage services including comprehensive drain and pipe cleaning.'
+    },
+    {
+      name: 'Paving and Curbing',
+      icon: HardHat,
+      description: 'Versatile paving and curbing solutions for commercial and residential sectors.'
+    },
+    {
+      name: 'Aluminium, Wood Doors and Windows Closures',
+      icon: Home,
+      description: 'Professional installation and re-installation of door and window closures.'
+    },
+    {
+      name: 'Drywall Partitioning',
+      icon: Building,
+      description: 'Comprehensive drywall and partitioning systems tailored to your needs.'
+    },
+    {
+      name: 'Shop Fitting/Carpentry',
+      icon: Axe,
+      description: 'Expert shop display and office fitting services with precision craftsmanship.'
+    },
+    {
+      name: 'Steelwork and Balustrades',
+      icon: Wrench,
+      description: 'Complete range of steelwork and balustrade options with professional installation.'
+    },
+    {
+      name: 'Painting and Artwork (including wall paper)',
+      icon: PaintBucket,
+      description: 'Comprehensive painting solutions and wall papering services.'
+    },
+    {
+      name: 'Air Conditioning',
+      icon: Wind,
+      description: 'Supply and installation of a wide range of air conditioning systems.'
+    },
+    {
+      name: 'Extraction Systems',
+      icon: ArrowDownToLine,
+      description: 'High-quality extraction and ventilation system supply and installation.'
+    },
+    {
+      name: 'Architectural Plans and Council Approval',
+      icon: CodeXml,
+      description: 'Comprehensive council approval services for building erections and alterations.'
+    },
+    {
+      name: 'Building',
+      icon: Building,
+      description: 'Multi-skilled tradesmen capable of handling all building requirements.'
+    },
+    {
+      name: 'Electrical Reticulation',
+      icon: Zap,
+      description: 'Expert electrical and lighting consultancy and implementation.'
+    },
+    {
+      name: 'Project Management',
+      icon: Cpu,
+      description: 'Professional project management ensuring timely and efficient completion.'
+    },
+    {
+      name: 'Civil and Earthworks',
+      icon: Globe,
+      description: 'Leading providers of civil and bulk earthworks in the property development sector.'
+    },
+    {
+      name: 'Roads and Storm Water Services',
+      icon: HardHat,
+      description: 'High-quality and sustainable road and storm water service solutions.'
+    },
+    {
+      name: 'Concrete Works',
+      icon: Building,
+      description: 'Complete concrete preparation, delivery, distribution, and curing services.'
+    },
+    {
+      name: 'Green Energy Solutions',
+      icon: SunDim,
+      description: 'Environmentally conscious solutions to minimize carbon footprint.'
+    },
+    {
+      name: 'Data Cabling',
+      icon: Cable,
+      description: 'Implementation of cabling infrastructures of various types and sizes.'
+    },
+    {
+      name: 'Home Automation',
+      icon: Lightbulb,
+      description: 'Integrated home systems with automated interfaces and programming.'
+    },
+    {
+      name: 'Generators and Alternative Energy Sources',
+      icon: Zap,
+      description: 'Diverse alternative energy source solutions for various needs.'
+    }
+  ];
 
   const services = [
     {
@@ -250,6 +376,38 @@ export default function Services() {
             <p className="text-gray-600">{service.description}</p>
           </button>
         ))}
+      </div>
+
+      <div className="mt-8">
+        <button 
+          onClick={() => setShowAdditionalServices(!showAdditionalServices)}
+          className="w-full flex justify-between items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
+        >
+          <span className="text-xl font-semibold">View All Our Services</span>
+          {showAdditionalServices ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+        </button>
+
+        {showAdditionalServices && (
+          <div className="mt-4 grid md:grid-cols-3 sm:grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
+            {additionalServices.map((service, index) => {
+              const ServiceIcon = service.icon;
+              return (
+                <div 
+                  key={index} 
+                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow flex items-start space-x-4 group"
+                >
+                  <div className="bg-blue-50 p-3 rounded-full group-hover:bg-blue-100 transition-colors">
+                    <ServiceIcon className="text-blue-600 w-6 h-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-1">{service.name}</h4>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
