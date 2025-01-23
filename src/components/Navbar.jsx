@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, X, User } from 'lucide-react';
-import logo from "./logo3.png";
+import logo from "./logo4.png";
 
 export default function Navbar({ activeTab, setActiveTab, isMenuOpen, setIsMenuOpen }) {
   return (

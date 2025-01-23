@@ -8,6 +8,8 @@ import {
   Activity, HardHat
 } from 'lucide-react';
 
+
+
 export default function Services() {
   const [selectedService, setSelectedService] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -146,16 +148,16 @@ export default function Services() {
 
       We work closely with homeowners to bring their vision to life while ensuring the highest quality standards.`,
       images: [
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        '/img/res1.jpg',
+        '/img/res2.jpg',
+        '/img/res3.webp',
+        '/img/res4.jpg'
       ],
       thumbnails: [
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150'
+        '/img/res1.jpg',
+        '/img/res2.jpg',
+        '/img/res3.webp',
+        '/img/res4.jpg'
       ]
     },
     {
@@ -172,16 +174,16 @@ export default function Services() {
 
       Our team ensures efficient project management and timely delivery while maintaining the highest safety standards.`,
       images: [
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+        '/img/com1.jpg',
+        '/img/com2.jpg',
+        '/img/com3.jpg',
+        '/img/com4.jpg'
       ],
       thumbnails: [
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150'
+       '/img/com1.jpg',
+        '/img/com2.jpg',
+        '/img/com3.jpg',
+        '/img/com4.jpg'
       ]
     },
     
@@ -199,16 +201,16 @@ export default function Services() {
 
       We work with both residential and commercial clients to create stunning interior spaces.`,
       images: [
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
+       '/img/int.jpg',
+        '/img/int1.jpg',
+        '/img/int2.jpg',
+        '/img/inr3.jpg'
       ],
       thumbnails: [
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150'
+        '/img/int.jpg',
+        '/img/int1.jpg',
+        '/img/int2.jpg',
+        '/img/inr3.jpg'
       ]
     },
     {
