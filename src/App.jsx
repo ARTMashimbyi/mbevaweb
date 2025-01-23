@@ -23,55 +23,60 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        scrollToSection={scrollToSection}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-      />
-      <Hero setActiveTab={setActiveTab} />
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          scrollToSection={scrollToSection}
+          servicesRef={servicesRef}
+          contactRef={contactRef}
+        />
+      </div>
       
-      <main className="max-w-7xl mx-auto px-4 py-12">
-        {/* Introduction Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">About Mbeva Construction</h2>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Introduction</h3>
-            <p className="mb-4">
-              MBEVA CONSTRUCTION is a South African company based in Johannesburg which operates nationally. We support Economic Empowerment programs and endeavor to transfer skills in the historically disadvantaged communities in which we operate.
-            </p>
-            
-            <h3 className="text-xl font-semibold mb-4">Vision</h3>
-            <p className="mb-4">
-              To be a leading customer-driven company that provides comprehensive and innovative solutions that elevate our clients' products.
-            </p>
-            
-            <h3 className="text-xl font-semibold mb-4">Mission</h3>
-            <p>
-              To become a market leader while being committed to meeting customer needs through high-quality, cost-effective, and technically managed solutions.
-            </p>
-          </div>
-        </section>
+      <div className="pt-16"> {/* Add padding to account for fixed navbar */}
+        <Hero setActiveTab={setActiveTab} />
+        
+        <main className="max-w-7xl mx-auto px-4 py-12">
+          {/* Introduction Section */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold mb-6">About Mbeva Construction</h2>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Introduction</h3>
+              <p className="mb-4">
+                MBEVA CONSTRUCTION is a South African company based in Johannesburg which operates nationally. We support Economic Empowerment programs and endeavor to transfer skills in the historically disadvantaged communities in which we operate.
+              </p>
+              
+              <h3 className="text-xl font-semibold mb-4">Vision</h3>
+              <p className="mb-4">
+                To be a leading customer-driven company that provides comprehensive and innovative solutions that elevate our clients' products.
+              </p>
+              
+              <h3 className="text-xl font-semibold mb-4">Mission</h3>
+              <p>
+                To become a market leader while being committed to meeting customer needs through high-quality, cost-effective, and technically managed solutions.
+              </p>
+            </div>
+          </section>
 
-        {/* Services Section */}
-        <section ref={servicesRef}>
-          <Services />
-        </section>
+          {/* Services Section */}
+          <section ref={servicesRef}>
+            <Services />
+          </section>
 
-        {/* Contact Section */}
-        <section ref={contactRef} className="mt-12">
-          <Contact />
-        </section>
+          {/* Contact Section */}
+          <section ref={contactRef} className="mt-12">
+            <Contact />
+          </section>
 
-        {/* Conditional rendering for other tabs */}
-        {activeTab === 'projects' && <Projects />}
-        {activeTab === 'profile' && <Profile />}
-      </main>
+          {/* Conditional rendering for other tabs */}
+          {activeTab === 'projects' && <Projects />}
+          {activeTab === 'profile' && <Profile />}
+        </main>
 
-      <Footer setActiveTab={setActiveTab} />
+        <Footer setActiveTab={setActiveTab} />
+      </div>
     </div>
   );
 }
