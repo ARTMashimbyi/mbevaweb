@@ -1,5 +1,5 @@
 import React from 'react';
-import home from "./home.jpg";
+import home from "./home2.jpg";
 
 export default function Hero({ setActiveTab }) {
   return (

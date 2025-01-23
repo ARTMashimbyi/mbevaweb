@@ -184,32 +184,7 @@ export default function Services() {
         '/api/placeholder/200/150'
       ]
     },
-    {
-      id: 3,
-      title: 'Infrastructure Development',
-      description: 'Roads, bridges, and public works projects.',
-      fullDescription: `Our infrastructure development services support public and private sector needs. We handle:
-      - Road construction and maintenance
-      - Bridge building and rehabilitation
-      - Underground utility systems
-      - Public transportation infrastructure
-      - Storm water management systems
-      - Environmental conservation projects
-
-      Each project is executed with careful attention to safety, durability, and environmental impact.`,
-      images: [
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600',
-        '/api/placeholder/800/600'
-      ],
-      thumbnails: [
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150',
-        '/api/placeholder/200/150'
-      ]
-    },
+    
     {
       id: 4,
       title: 'Interior Finishing',
@@ -244,14 +219,7 @@ export default function Services() {
       images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     },
-    {
-      id: 6,
-      title: 'Renovation Services',
-      description: 'Comprehensive renovation solutions for new and existing infrastructure.',
-      fullDescription: `Our Renovation division provides comprehensive solutions to new and existing infrastructure. We offer upgrades on package selections and deliver cost-effective solutions tailored to each client's unique needs.`,
-      images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
-      thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
-    },
+    
     {
       id: 7,
       title: 'Specialized Services',
