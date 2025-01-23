@@ -45,8 +45,24 @@ export default function App() {
         <main className="max-w-7xl mx-auto px-4 py-12">
           {/* Introduction Section */}
           <section className="mb-12">
-            {/* ... (previous introduction content remains the same) ... */}
-          </section>
+          <h2 className="text-3xl font-bold mb-6">About Mbeva Construction</h2>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Introduction</h3>
+            <p className="mb-4">
+              MBEVA CONSTRUCTION is a South African company based in Johannesburg which operates nationally. We support Economic Empowerment programs and endeavor to transfer skills in the historically disadvantaged communities in which we operate.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4">Vision</h3>
+            <p className="mb-4">
+              To be a leading customer-driven company that provides comprehensive and innovative solutions that elevate our clients' products.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4">Mission</h3>
+            <p>
+              To become a market leader while being committed to meeting customer needs through high-quality, cost-effective, and technically managed solutions.
+            </p>
+          </div>
+        </section>
 
           {/* Services Section */}
           <section ref={servicesRef}>
