@@ -2,8 +2,13 @@ import React from 'react';
 
 export default function Hero({ setActiveTab }) {
   return (
-    <div className="bg-blue-600 text-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="relative bg-cover bg-center text-white py-16" style={{
+      backgroundImage: 'url("/api/placeholder/1920/1080")'
+    }}>
+      {/* Overlay to improve text readability */}
+      <div className="absolute inset-0 bg-blue-600 opacity-70"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 z-10">
         <h2 className="text-4xl font-bold mb-4">Building Tomorrow's Infrastructure Today</h2>
         <p className="text-xl mb-8">Excellence in Construction Since 2019</p>
         <button
