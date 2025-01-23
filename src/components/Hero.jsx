@@ -1,12 +1,15 @@
 import React from 'react';
+import home from "./home.jpg";
 
 export default function Hero({ setActiveTab }) {
   return (
-    <div className="relative bg-cover bg-center text-white py-16" style={{
-      backgroundImage: 'url("/api/placeholder/1920/1080")'
+    <div 
+    className="relative bg-cover bg-center text-white py-16" 
+    style={{
+      backgroundImage: `url(${home})` // Use the imported image variable
     }}>
       {/* Overlay to improve text readability */}
-      <div className="absolute inset-0 bg-blue-600 opacity-70"></div>
+      <div className="absolute inset-0 bg-blue-600 opacity-40"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 z-10">
         <h2 className="text-4xl font-bold mb-4">Building Tomorrow's Infrastructure Today</h2>
