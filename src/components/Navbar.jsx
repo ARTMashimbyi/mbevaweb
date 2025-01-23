@@ -9,7 +9,9 @@ export default function Navbar({
   setIsMenuOpen, 
   scrollToSection,
   servicesRef,
-  contactRef 
+  contactRef,
+  projectsRef,
+  profileRef
 }) {
   const handleNavClick = (tab, ref) => {
     setActiveTab(tab);
@@ -42,7 +44,7 @@ export default function Navbar({
               Services
             </button>
             <button
-              onClick={() => handleNavClick('projects', null)}
+              onClick={() => handleNavClick('projects', projectsRef)}
               className={`px-3 py-2 rounded-md text-sm font-medium ${
                 activeTab === 'projects' ? 'text-blue-600' : 'text-gray-700 hover:text-gray-900'
               }`}
@@ -58,7 +60,7 @@ export default function Navbar({
               Contact
             </button>
             <button
-              onClick={() => handleNavClick('profile', null)}
+              onClick={() => handleNavClick('profile', profileRef)}
               className={`p-2 rounded-full ${
                 activeTab === 'profile' ? 'bg-blue-100 text-blue-600' : 'text-gray-700 hover:bg-gray-100'
               }`}
@@ -88,7 +90,7 @@ export default function Navbar({
               Services
             </button>
             <button
-              onClick={() => handleNavClick('projects', null)}
+              onClick={() => handleNavClick('projects', projectsRef)}
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 w-full text-left"
             >
               Projects
@@ -100,7 +102,7 @@ export default function Navbar({
               Contact
             </button>
             <button
-              onClick={() => handleNavClick('profile', null)}
+              onClick={() => handleNavClick('profile', profileRef)}
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 w-full text-left"
             >
               Company Profile
