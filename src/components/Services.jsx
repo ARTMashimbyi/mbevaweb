@@ -179,16 +179,18 @@ export default function Services() {
       images: [
        '/imgs/int/int.jpg',
         '/imgs/int/int9.jpg',
-        '/imgs/int/int6.jpg',
+        '/imgs/Floor.jpeg',
         '/imgs/int/int3.jpg',
+        '/imgs/int/int12.jpg',
         '/imgs/int/int4.jpg',
         '/imgs/int/int13.jpg'
       ],
       thumbnails: [
         '/imgs/int/int.jpg',
         '/imgs/int/int9.jpg',
-        '/imgs/int/int6.jpg',
+        '/imgs/Floor.jpeg',
         '/imgs/int/int3.jpg',
+        '/imgs/int/int12.jpg',
         '/imgs/int/int4.jpg',
         '/imgs/int/int13.jpg'
       ]
@@ -207,13 +209,15 @@ export default function Services() {
         '/imgs/res/res6.jpg',
         '/imgs/res/res7.jpg',
         '/imgs/res/wel2.jpg',
+        '/imgs/int/int6.jpg',
         '/imgs/res/res9.jpg',
         '/imgs/res/wel3.jpg',
         '/imgs/int/paint.jpg'],
-      thumbnails: [
+      thumbnails:[
         '/imgs/res/res6.jpg',
         '/imgs/res/res7.jpg',
         '/imgs/res/wel2.jpg',
+        '/imgs/int/int6.jpg',
         '/imgs/res/res9.jpg',
         '/imgs/res/wel3.jpg',
         '/imgs/int/paint.jpg']
@@ -229,14 +233,22 @@ export default function Services() {
       - Carpentry
       - Partitioning
       - Ceiling installation`,
-      images: ['/imgs/int/int.jpg',
-        '/imgs/res/res6.jpg',
-        '/imgs/res/res7.jpg',
-        '/imgs/res/wel2.jpg',
-        '/imgs/res/res9.jpg',
-        '/imgs/res/wel3.jpg',
-        '/imgs/int/paint.jpg'],
-      thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
+      images: [
+        '/imgs/plum/plum1.png',
+        '/imgs/ele/ele.jpg',
+        '/imgs/int/int10.jpg',
+        '/imgs/cap2.jpg',
+        '/imgs/ele/elec3.jpeg',
+        '/imgs/int/int8.jpg',
+        '/imgs/Ceiling.jpg'],
+      thumbnails: [
+        '/imgs/plum/plum1.png',
+        '/imgs/ele/ele.jpg',
+        '/imgs/int/int10.jpg',
+        '/imgs/cap2.jpg',
+        '/imgs/ele/elec3.jpeg',
+        '/imgs/int/int8.jpg',
+        '/imgs/Ceiling.jpg']
     }
     
   ];
