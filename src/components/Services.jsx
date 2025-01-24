@@ -8,8 +8,6 @@ import {
   Activity, HardHat
 } from 'lucide-react';
 
-
-
 export default function Services() {
   const [selectedService, setSelectedService] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -229,24 +227,23 @@ export default function Services() {
       description: 'Plumbing, electrical, carpentry, and more.',
       fullDescription: `We offer specialized services including:
       - Plumbing
-      - Electrical work
       - Carpentry
       - Partitioning
       - Ceiling installation`,
       images: [
         '/imgs/plum/plum1.png',
-        '/imgs/ele/ele.jpg',
+        
         '/imgs/int/int10.jpg',
         '/imgs/cap2.jpg',
-        '/imgs/ele/elec3.jpeg',
+        
         '/imgs/int/int8.jpg',
         '/imgs/Ceiling.jpg'],
       thumbnails: [
         '/imgs/plum/plum1.png',
-        '/imgs/ele/ele.jpg',
+        
         '/imgs/int/int10.jpg',
         '/imgs/cap2.jpg',
-        '/imgs/ele/elec3.jpeg',
+        
         '/imgs/int/int8.jpg',
         '/imgs/Ceiling.jpg']
     }
@@ -284,11 +281,13 @@ export default function Services() {
             </div>
 
             <div className="relative">
-              <img 
-                src={selectedService.images[currentImageIndex]} 
-                alt={`${selectedService.title} - Image ${currentImageIndex + 1}`}
-                className="w-full h-[60vh] object-cover"
-              />
+              <div className="w-full h-[60vh] flex justify-center items-center bg-gray-100">
+                <img 
+                  src={selectedService.images[currentImageIndex]} 
+                  alt={`${selectedService.title} - Image ${currentImageIndex + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
               
               <button 
                 onClick={prevImage}
@@ -315,7 +314,7 @@ export default function Services() {
                     <img 
                       src={thumb} 
                       alt={`Thumbnail ${index + 1}`}
-                      className="w-20 h-16 object-cover rounded"
+                      className="w-20 h-16 object-contain bg-white"
                     />
                   </button>
                 ))}
@@ -343,11 +342,13 @@ export default function Services() {
             onClick={() => setSelectedService(service)}
             className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-left"
           >
-            <img 
-              src={service.thumbnails[0]} 
-              alt={service.title}
-              className="w-full h-48 object-cover rounded-lg mb-4"
-            />
+            <div className="w-full h-48 bg-gray-100 flex justify-center items-center mb-4">
+              <img 
+                src={service.thumbnails[0]} 
+                alt={service.title}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
             <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
             <p className="text-gray-600">{service.description}</p>
           </button>
@@ -355,13 +356,28 @@ export default function Services() {
       </div>
 
       <div className="mt-8">
-        <button 
-          onClick={() => setShowAdditionalServices(!showAdditionalServices)}
-          className="w-full flex justify-between items-center bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors"
-        >
-          <span className="text-xl font-semibold">View All Our Services</span>
-          {showAdditionalServices ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
-        </button>
+      <button 
+  onClick={() => setShowAdditionalServices(!showAdditionalServices)}
+  className="w-full flex justify-between items-center 
+    bg-gradient-to-r from-blue-600 to-blue-800 
+    text-white 
+    p-4 
+    rounded-lg 
+    shadow-lg 
+    hover:from-blue-700 hover:to-blue-900 
+    transition-all 
+    duration-300 
+    ease-in-out 
+    transform 
+    hover:-translate-y-1 
+    focus:outline-none 
+    focus:ring-2 
+    focus:ring-blue-500 
+    focus:ring-opacity-50"
+>
+  <span className="text-xl font-bold tracking-wider">View All Our Services</span>
+  {showAdditionalServices ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+</button>
 
         {showAdditionalServices && (
           <div className="mt-4 grid md:grid-cols-3 sm:grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
