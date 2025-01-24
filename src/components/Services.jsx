@@ -171,7 +171,6 @@ export default function Services() {
       fullDescription: `Our interior finishing services bring spaces to life with attention to detail and premium craftsmanship. Services include:
       - Custom cabinetry and millwork
       - Hardwood and specialty flooring
-      - Professional painting and wall finishes
       - Custom built-ins and shelving
       - Ceiling treatments and lighting
       - High-end material installation
@@ -179,19 +178,19 @@ export default function Services() {
       We work with both residential and commercial clients to create stunning interior spaces.`,
       images: [
        '/imgs/int/int.jpg',
-        '/imgs/int/int1.jpg',
-        '/imgs/int/int2.jpg',
+        '/imgs/int/int9.jpg',
+        '/imgs/int/int6.jpg',
         '/imgs/int/int3.jpg',
-        '/imgs/int/int2.jpg',
-        '/imgs/int/int3.jpg'
+        '/imgs/int/int4.jpg',
+        '/imgs/int/int13.jpg'
       ],
       thumbnails: [
         '/imgs/int/int.jpg',
-        '/imgs/int/int1.jpg',
-        '/imgs/int/int2.jpg',
+        '/imgs/int/int9.jpg',
+        '/imgs/int/int6.jpg',
         '/imgs/int/int3.jpg',
-        '/imgs/int/int2.jpg',
-        '/imgs/int/int3.jpg'
+        '/imgs/int/int4.jpg',
+        '/imgs/int/int13.jpg'
       ]
     },
     {
@@ -204,8 +203,20 @@ export default function Services() {
       - Paving 
       - Welding/Metal works
       - Painting`,
-      images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
-      thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
+      images:[
+        '/imgs/res/res6.jpg',
+        '/imgs/res/res7.jpg',
+        '/imgs/res/wel2.jpg',
+        '/imgs/res/res9.jpg',
+        '/imgs/res/wel3.jpg',
+        '/imgs/int/paint.jpg'],
+      thumbnails: [
+        '/imgs/res/res6.jpg',
+        '/imgs/res/res7.jpg',
+        '/imgs/res/wel2.jpg',
+        '/imgs/res/res9.jpg',
+        '/imgs/res/wel3.jpg',
+        '/imgs/int/paint.jpg']
     },
     
     {
@@ -218,7 +229,13 @@ export default function Services() {
       - Carpentry
       - Partitioning
       - Ceiling installation`,
-      images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
+      images: ['/imgs/int/int.jpg',
+        '/imgs/res/res6.jpg',
+        '/imgs/res/res7.jpg',
+        '/imgs/res/wel2.jpg',
+        '/imgs/res/res9.jpg',
+        '/imgs/res/wel3.jpg',
+        '/imgs/int/paint.jpg'],
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     }
     
