@@ -163,7 +163,7 @@ export default function Services() {
     
     
     {
-      id: 4,
+      id: 2,
       title: 'Interior Finishing',
       description: 'High-quality interior work including flooring, painting, and custom carpentry.',
       fullDescription: `Our interior finishing services bring spaces to life with attention to detail and premium craftsmanship. Services include:
@@ -176,29 +176,38 @@ export default function Services() {
 
       We work with both residential and commercial clients to create stunning interior spaces.`,
       images: [
-       '/img/int.jpg',
-        '/img/int1.jpg',
-        '/img/int2.jpg',
-        '/img/inr3.jpg'
+       '/imgs/int/int.jpg',
+        '/imgs/int/int1.jpg',
+        '/imgs/int/int2.jpg',
+        '/imgs/int/int3.jpg',
+        '/imgs/int/int2.jpg',
+        '/imgs/int/int3.jpg'
       ],
       thumbnails: [
-        '/img/int.jpg',
-        '/img/int1.jpg',
-        '/img/int2.jpg',
-        '/img/inr3.jpg'
+        '/imgs/int/int.jpg',
+        '/imgs/int/int1.jpg',
+        '/imgs/int/int2.jpg',
+        '/imgs/int/int3.jpg',
+        '/imgs/int/int2.jpg',
+        '/imgs/int/int3.jpg'
       ]
     },
     {
-      id: 5,
+      id: 3,
       title: 'General & Commercial Building Construction',
       description: 'Office, home, and commercial renovations/building production.',
-      fullDescription: `We provide turnkey production services from the conceptual drawing stage to project closing. We partner with clients to allow them to continue with their core business while we take care of their production needs.`,
+      fullDescription: `We provide turnkey production services from the conceptual drawing stage to project closing. We partner with clients to allow them to continue with their core business while we take care of their production needs.:
+      
+      - Brick laying
+      - Paving 
+      - Welding/Metal works
+      - Painting`,
       images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     },
     
     {
-      id: 7,
+      id: 4,
       title: 'Specialized Services',
       description: 'Plumbing, electrical, carpentry, and more.',
       fullDescription: `We offer specialized services including:
@@ -206,9 +215,7 @@ export default function Services() {
       - Electrical work
       - Carpentry
       - Partitioning
-      - Ceiling installation
-      - Welding/Metal works
-      - Painting`,
+      - Ceiling installation`,
       images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     }
