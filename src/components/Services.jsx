@@ -148,44 +148,19 @@ export default function Services() {
 
       We work closely with homeowners to bring their vision to life while ensuring the highest quality standards.`,
       images: [
-        '/img/res1.jpg',
-        '/img/res2.jpg',
-        '/img/res3.webp',
-        '/img/res4.jpg'
+        '../imgs/res/res1.jpg',
+        '../imgs/res/res2.jpg',
+        '../imgs/res/res3.jpg',
+        '../imgs/res/res4.jpg'
       ],
       thumbnails: [
-        '/img/res1.jpg',
-        '/img/res2.jpg',
-        '/img/res3.webp',
-        '/img/res4.jpg'
+        '../imgs/res/res1.jpg',
+        '../imgs/res/res2.jpg',
+        '../imgs/res/res3.jpg',
+        '../imgs/res/res4.jpg'
       ]
     },
-    {
-      id: 2,
-      title: 'Commercial Construction',
-      description: 'Office buildings, retail spaces, and industrial facilities.',
-      fullDescription: `We specialize in commercial construction projects of all sizes. Our services include:
-      - Office building construction
-      - Retail space development
-      - Industrial facility construction
-      - Warehouse and logistics centers
-      - Medical facilities and laboratories
-      - Restaurant and hospitality spaces
-
-      Our team ensures efficient project management and timely delivery while maintaining the highest safety standards.`,
-      images: [
-        '/img/com1.jpg',
-        '/img/com2.jpg',
-        '/img/com3.jpg',
-        '/img/com4.jpg'
-      ],
-      thumbnails: [
-       '/img/com1.jpg',
-        '/img/com2.jpg',
-        '/img/com3.jpg',
-        '/img/com4.jpg'
-      ]
-    },
+    
     
     {
       id: 4,
@@ -236,15 +211,8 @@ export default function Services() {
       - Painting`,
       images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
       thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
-    },
-    {
-      id: 8,
-      title: 'Infrastructure Development',
-      description: 'Complete infrastructure solutions and development services.',
-      fullDescription: `Our infrastructure development services include comprehensive planning, design, and implementation of various infrastructure projects. We focus on delivering quality results while maintaining cost-effectiveness.`,
-      images: ['/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600', '/api/placeholder/800/600'],
-      thumbnails: ['/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150', '/api/placeholder/200/150']
     }
+    
   ];
 
   const nextImage = () => {
