@@ -149,15 +149,17 @@ export default function Services() {
       We work closely with homeowners to bring their vision to life while ensuring the highest quality standards.`,
       images: [
         '/imgs/res/res1.jpg',
-        '/imgs/res/res2.jpg',
+        '/imgs/res/res5.jpg',
+        '/imgs/res/res4.jpg',
         '/imgs/res/res3.webp',
-        '/imgs/res/res4.jpg'
+        '/imgs/res/res8.jpg'
       ],
       thumbnails: [
         '/imgs/res/res1.jpg',
-        '/imgs/res/res2.jpg',
+        '/imgs/res/res5.jpg',
+        '/imgs/res/res4.jpg',
         '/imgs/res/res3.webp',
-        '/imgs/res/res4.jpg'
+        '/imgs/res/res8.jpg'
       ]
     },
     
